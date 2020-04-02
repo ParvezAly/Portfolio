@@ -1,3 +1,10 @@
+/*
+ksFKW/ux/XOEMvt3g0Ci8Ag+6iq7IQUw/l2/WLOZkQElseQbuye81jY/LNTym6UR
+cat style.css | openssl dgst -sha384 -binary | openssl base64 -A
+
+<link rel="stylesheet" href="./style.css">
+<script integrity="sha384-ksFKW/ux/XOEMvt3g0Ci8Ag+6iq7IQUw/l2/WLOZkQElseQbuye81jY/LNTym6UR"></script>
+*/
 * {
   margin: 0;
   padding: 0;

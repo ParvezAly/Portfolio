@@ -46,12 +46,12 @@ body {
   background:#3271a8 no-repeat; /*SETS THE BACKGROUND COLOUR TO BLUE */
 
 /*START:ACTIVE CODE FOR ANIMATION*/
-/*
+
   background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #3271a8);
   background-size: 400% 400%;
   animation: Gradient 5s ease infinite; 
   
-*/ 
+ 
 }
 
 @-webkit-keyframes Gradient {
@@ -82,7 +82,7 @@ body {
 	/*height: 50vh;*/
   height: 100%;
 	align-items: center;
-	/*
+/*	
   background: linear-gradient(#a84b4b 15%, green 85%),
               linear-gradient(to right, green 30%, yellow 70%);
 
@@ -167,7 +167,7 @@ body {
 /*START: SOCIAL MEDIA ICONS */
 li {
   list-style: none;
-  margin: 10px 30px;
+  margin: 10px; /*10px 30px;*/
   /*display: inline-block; */
   font-size: 30px;
   /*padding: 20px 20px;*/
@@ -176,10 +176,10 @@ li {
   border: 1px solid #fff;
 
   border-radius: 50%;
-  border-left: 30px;
-  border-top: 30px;
-  border-right: 30px;
-  border-bottom: 30px;
+  border-left: 50px;
+  border-top: 50px;
+  border-right: 50px;
+  border-bottom: 50px;
   transition: .5s;
 
   cursor: pointer;
@@ -198,10 +198,20 @@ li {
   width: 450px;
   height: 100px;
   margin: 250px 0 0 30px;
+
   /*margin-top: 100px;*/
   /*padding: 50px 0 0 0; */
   display: inline-block;
   font-size: 30px;
+/*
+  background: linear-gradient(#a84b4b 15%, green 85%),
+              linear-gradient(to right, green 30%, yellow 70%);
+
+  background: linear-gradient(#a84b4b 15%, green 85%),
+              linear-gradient(to right, green 30%, yellow 70%);
+
+  background-blend-mode: screen difference lighten reverse;
+  */
 /*
 Harrison Malone(Offline) helped online via screen share on 31-mar-2020
 4:02 PM
