@@ -1,0 +1,301 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  font-family: 'Roboto', sans-serif;
+	/*border: 5px solid red;*/
+
+/*
+  background: linear-gradient(#a84b4b 15%, green 85%),
+              linear-gradient(to right, green 30%, yellow 70%);
+
+  background: linear-gradient(#a84b4b 15%, green 85%),
+              linear-gradient(to right, green 30%, yellow 70%);
+
+  background-blend-mode: screen difference lighten reverse;
+  
+  opacity: 1;
+*/
+}
+/*START: HEADING 'CONTACT US' DISPLAY PARAMETERS.*/
+h1 {
+  font-weight: lighter;
+  font-size: 60px;
+  color: #fff;
+  text-align: center;
+  padding-top: 50px;
+  margin-bottom: 0;
+}
+/*END: HEADING 'CONTACT US' DISPLAY PARAMETERS.*/
+
+/*START: HEADING 'QUESTIONAIRE' DISPLAY PARAMETERS. */
+p {
+  color: #fff;
+  text-align: center;
+  /*font-family: 'Times New Roman';*/
+  font-weight: lighter;
+  font-size: 40px;
+  margin-top: 0;
+}
+/*END: HEADING 'QUESTIONAIRE' DISPLAY PARAMETERS.*/
+body {
+  height: 100vh; /* this is a view port height */
+  background:#3271a8 no-repeat; /*SETS THE BACKGROUND COLOUR TO BLUE */
+
+/*START:ACTIVE CODE FOR ANIMATION*/
+/*
+  background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #3271a8);
+  background-size: 400% 400%;
+  animation: Gradient 5s ease infinite; 
+  
+*/ 
+}
+
+@-webkit-keyframes Gradient {
+  0% {
+    background-position: 0% 50%
+  }
+  50% {
+    background-position: 100% 50%
+  }
+  100% {
+    background-position: 0% 50%
+  }
+}
+/*END:ACTIVE CODE FOR ANIMATION*/
+
+.containerinput {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  margin-left: 35%;
+
+  display: flex;
+  flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: center;
+  /*justify-content: space-between;*/
+
+	/*height: 50vh;*/
+  height: 100%;
+	align-items: center;
+	/*
+  background: linear-gradient(#a84b4b 15%, green 85%),
+              linear-gradient(to right, green 30%, yellow 70%);
+
+  background: linear-gradient(#a84b4b 15%, green 85%),
+              linear-gradient(to right, green 30%, yellow 70%);
+
+  background-blend-mode: screen difference lighten reverse;*/
+  /*ACTIVE*/
+  opacity: 0.8;
+}
+
+.contactus-form { /* this represents the background of the field's block */
+  max-width: 100%;
+  margin: 0 auto;
+  top: 50%;
+  padding: 0;
+  align-content: center;
+  /*background: black; */
+}
+
+.companylogo {
+  position: relative;
+  height: 180px;
+  width: 180px;
+  background-color: #bbb;
+
+  border-radius: 50%;
+  /*background: url(purchase.jpg);*/
+  display: inline-block;
+  background: white;
+  justify-content: flex-start;
+  cursor: pointer;
+  background:#3271a8;
+}
+
+.input {
+  height: 40px;
+  margin: 0 auto;
+  background: #FFF5EE;
+  font-size: 16;
+  width: 48%;
+}
+
+.input:focus {
+  background: pink;
+  font-weight: bold;
+  font-style: italic;
+}
+
+.input:hover{
+  background: pink;
+}
+
+.msg textarea {
+  background: #FFF5EE;
+  height: 100px;
+  width: 350px;
+}
+
+.msg textarea:hover {
+  background: pink;
+}
+
+.msg textarea:focus {
+  background: pink; 
+}
+
+.msg input {
+  background: #FFF5EE; 
+  height: 40px;
+  width: 120px;
+}
+
+.socialmediaiconclass {
+  position: absolute;
+  width: 0 auto;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, 50%);
+}
+
+/*START: SOCIAL MEDIA ICONS */
+li {
+  list-style: none;
+  margin: 10px 30px;
+  /*display: inline-block; */
+  font-size: 30px;
+  /*padding: 20px 20px;*/
+
+  color: #fff;
+  border: 1px solid #fff;
+
+  border-radius: 50%;
+  border-left: 30px;
+  border-top: 30px;
+  border-right: 30px;
+  border-bottom: 30px;
+  transition: .5s;
+
+  cursor: pointer;
+
+  background:#3271a8 no-repeat;
+
+  background: linear-gradient(-50deg, #3271a8, #E73C7E);
+  /*background: linear-gradient(-50deg, #3271a8, #23A6D5, #E73C7E, #EE7752); */
+ /* background: linear-gradient(-45deg, #f7d302, #dbab0d, #29ebda, #9e7f6b);  */
+  background-size: 400% 400%;
+  animation: Gradient 5s ease infinite; 
+
+}
+
+#socialmediaiconid {
+  width: 450px;
+  height: 100px;
+  margin: 250px 0 0 30px;
+  /*margin-top: 100px;*/
+  /*padding: 50px 0 0 0; */
+  display: inline-block;
+  font-size: 30px;
+/*
+Harrison Malone(Offline) helped online via screen share on 31-mar-2020
+4:02 PM
+
+.github-icon {
+font-size: 30px;
+} */
+/*  margin-left: 30px;*/
+   /*width: 100vw; *//*ACTIVE LINE OF CODE*/
+   width: 50%;
+   /*height: 20vh; */
+  /*block-size: 100px;*/
+  /*height: 10vh; */
+  /*line-height: 110px;*/
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  /*align-items: center;
+  align-content: space-around;
+  position: absolute;
+  margin: 0 auto;*/
+
+  /*background: black; */
+  opacity: 0.8;
+/*  margin-top: 50px;
+  margin-left: 20px;
+  
+  margin-left: 300px;
+   background: black; 
+  /*width: 0 auto;
+  font-size: 30px;*/
+
+}
+
+*/
+ /* START: ACTIVE CODE FOR SOCIAL MEDIA ICONS */
+a {
+  height: 100px;
+  width: 100px;
+  background-color: #f5f6fa;
+  border-radius: 50px;
+  text-align: center;
+  margin: 10px;
+  line-height: 110px;
+  box-shadow: 1px 4px 2px 2px;
+  font-size: 24px;
+}
+
+a i {
+   transition: all 0.3s linear;
+}
+
+a:hover i {
+  transform: scale (1.4);
+}
+
+.fa-facebook {
+  color: #0097e6;
+}
+
+.fa-instagram {
+  color: #e84393;
+}
+
+.fa-youtube {
+  color: #e84118;
+}
+
+.fa-linkedin {
+  color: #0097e6;
+}
+
+.fa-twitter {
+  color: #0097e6;
+}
+
+ul li:hover {
+  color: #292929;
+  border: 1px solid #292929;
+  transition: .5s;
+}
+
+.containersocialmedia {
+  /*
+  position: absolute;
+  top: 70%;
+  left: 2%;
+  margin-left: 4%;
+  */
+}
+/* END: ACTIVE CODE FOR SOCIAL MEDIA ICONS */
+
+@media screen and (max-width: 300px) {
+  body {
+    display: none;
+  }
+}

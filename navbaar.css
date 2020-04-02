@@ -1,0 +1,100 @@
+* { 
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+/*	border: 5px solid red;*/
+  }
+
+nav {
+  height: 10vh;
+  /*background: pink;*/
+  top: 20px;
+  }
+.nav-links {
+  list-style: none; /* removes all the dots from the menu items*/
+  display: flex; /*displays links defined in html horizontally*/
+  flex-direction: column;
+  width: 50%;
+  /*background: lightcoral;*/
+  height: 100%;
+  justify-content: space-around;
+  align-items: center;
+  margin-left: auto; /* jumps the links to the top right side */
+  }
+
+.nav-links li a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  }
+
+.landing { /* defined for circle in html but I have not defined it as not needed*/
+  height: 90vh;
+  display: flex;
+  /*justify-content: center;*/
+  justify-content: flex-end;
+  align-items: center;
+  }
+
+@media screen and (max-width: 700px) { /*this code makes it responsive */
+  /*body {
+     display: none; */ /*when browser is reduced to the max-width of 768 the screen goes blank*/
+  /*} */
+  /*START: HELPED BY HARRISON ON 31-MAR-2020 1600HOURS */
+  /*.menuline { /*stopped this code after testing, and this is not required as I need it to be visible on whole screen and not to hide it
+    display: none
+    }
+    */
+/*END: HELPED BY HARRISON ON 31-MAR-2020 1600HOURS */
+
+  /*@media only screen and (min-width: 600px) {
+   .menuline {
+    display: none
+    }
+}
+*/
+
+  .line {
+    width: 30px;
+    height: 3px;
+    background: rgb(113, 83, 122);
+    margin: 5px;
+
+    }
+
+  nav {
+    position: relative;
+    }
+
+  .menuline {
+    position: absolute;
+    cursor: pointer;
+    right: 5%;
+    top: 60%;
+    /*transform: translate(-5, -50%);*/
+    transform: translate(5, 60%);
+    }
+    
+  .nav-links {
+    position: fixed;
+    background: rgb(14, 135, 204); /*pink*/
+    height: 100vh;
+    width: 100%;
+    flex-direction: row; /*column;*/
+    /*display: none; */
+    /*clip-path: circle(100px at 90% -10%);
+    -webkit-clip-path: circle((100px at 90% -10%);*/
+  
+    clip-path: circle(100px at 90%);
+    -webkit-clip-path: circle(100px at 90% -10%);
+    transition: all 1s ease-out;
+    }
+    .nav-links.open {
+    clip-path: circle(400px at 90%);
+    -webkit-clip-path: circle(400px at 90% -10%);
+    }
+
+  .landing {
+      flex-direction: column;
+    }
+}
